@@ -1,0 +1,70 @@
+@media (min-width: 770px)  {
+    .m{display: none;}
+    .pc{display: none;}
+    .tab{display: block;}
+
+    .main .wrap{overflow: hidden;}
+    .main .wrap .tit{font-size: 8vh; line-height: 10vh;}
+    .main .wrap .video{width: 85%; margin: 0 auto; margin-top: 20px; position: relative; z-index: 2;}
+    .main .wrap .flow_con{
+        display: block; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        z-index: 1;
+    }
+    .main .wrap .flow_con .flow-text{display: flex; white-space: nowrap; overflow: hidden;}
+    .main .wrap .flow_con .flow-text .flow-wrap{
+        font-family: "times";
+        font-size: 50px;
+        margin-left: 20px;
+        margin-top: 10px;
+        color: #555;
+        opacity: 20%;
+        animation: textLoop 5s linear infinite;
+        padding-right: 1.4881vw;
+    }
+    .main .wrap .flow_con .flow-text:nth-child(2) .flow-wrap{
+        animation: textLoop 3s linear infinite;
+    }
+    @keyframes textLoop {
+        0% {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+        }
+    }
+
+    .store .wrap .title .bottom .btn::before{
+        width: 90%;
+    }
+    .store .wrap .shop .location{position: relative;}
+    .store .wrap .shop .location .txt{display: none;}
+    .store .wrap .shop .location .swiper-pagination{
+        color: white;
+
+        font-size: 20px;
+        width: 100px;
+        left: unset;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 20px 0;
+        background-color: #555;
+    }
+
+    .news .wrap .title .wrap2 .btn::before{
+        width: 110vh;
+    }
+    .kakao .wrap .button .btn::before{
+        width: 300vh;
+    }
+    .guide .wrap .button .btn::before{
+        content: '';
+        width: 300vh;
+    }
+}

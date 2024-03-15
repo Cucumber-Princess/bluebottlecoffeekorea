@@ -1,0 +1,329 @@
+@media (min-width: 1200px)  {
+    .m{display: none;}
+    .tab{display: none;}
+    .pc{display: block;}
+
+    header .wrap{
+        width: 80%;
+        padding: 20px 0;
+    }
+    header .wrap nav{
+        position: unset;
+        top: unset;
+        left: unset;
+        width: unset;
+        height: unset;
+        background-color: unset;
+        z-index: unset;
+        display: flex;
+        align-items: center;
+    }
+    header .wrap nav .top{
+        display: none;
+    }
+    header .wrap nav .bottom .menu{
+        display: flex;
+        align-items: center;
+    }
+    header .wrap nav .bottom .menu li{
+        width: unset;
+        border-bottom: unset;
+        text-align: center;
+        position: relative;   
+    }
+    header .wrap nav .bottom .menu li .btn button{
+        padding: 0px 20px 0px 20px;
+        font-size: 20px;
+    }
+    header .wrap nav .bottom .menu li:hover .btn button{
+        color: #1ca0d9;
+    }
+    header .wrap nav .bottom .menu li .btn button::after{
+        display: none;
+    }
+    header .wrap nav .bottom .menu li .btn a{
+        padding: 0px 20px 0px 20px;
+    }
+    header .wrap nav .bottom .menu li .btn a:hover{
+        color: #1ca0d9;
+    }
+    header .wrap nav .bottom .menu li .box{
+        display: none; 
+        position: absolute;
+        top: 25px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    header .wrap nav .bottom .menu li .box .con{
+        
+    }
+    header .wrap nav .bottom .menu li .box .con a{
+        display: block;
+        padding: 10px 0;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    header .wrap nav .bottom .menu li .box .con a:hover{
+        color: #555;
+    }
+
+    .banner .wrap .text p{font-size: 20px;}
+    .banner .wrap .text h2{font-size: 27px;}
+
+    .main .wrap{padding: 250px 0 250px 0px;}
+    .main .wrap .tit::after{
+        height: 25vh;
+        top: 120px;
+    }
+    .main .wrap{width: 100%;}
+    .main .wrap .video{width: 60%;}
+ 
+    .main .wrap .flow_con .flow-text .flow-wrap{
+        font-size: 60px;
+    }
+
+    .store{padding-bottom: 500px;}
+    .store .wrap{width: 100%; margin: 0 auto; position: relative;}
+    .store .wrap .title{width: 35%; background-color: #1ca0d9; color: white;}
+    .store .wrap .title .top{display: flex;}
+    .store .wrap .title .tit{
+        width: 50%;
+        height: 50vh;
+        position: relative;
+        z-index: 1;
+    }
+    .store .wrap .title .top h3{
+        font-family: "times";
+        font-weight: 100;
+        font-size: 80px;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translatex(-50%) rotate(-90deg);
+    }
+    .store .wrap .title .top .shop_img{
+        width: 45%;
+        height: 60vh;
+        background-image: url(../images/shop_8.jpg);
+        background-size: cover;
+        background-position: center center;
+        font-size: 0;
+        position: absolute;
+        top: -15%;
+        right: 5%;
+        z-index: 2;
+    }
+    .store .wrap .title .bottom{
+        padding: 30px 30% 30px 0;
+    }
+    .store .wrap .title .bottom .txt{padding-left: 10px;}
+    .store .wrap .shop{
+        width: 70%;
+        margin: unset;
+        border: unset;
+        background-color: #555;
+        display: flex;
+        padding: 13px;
+        position: absolute;
+        bottom: -80%;
+        right: 0;
+        z-index: 20;
+    }
+    .store .wrap .shop .shop_swp{
+        width: 55%;
+        height: unset;
+        margin: unset;
+        position: relative;
+    }
+    .store .wrap .shop .shop_swp .swiper-wrapper{}
+    .store .wrap .shop .shop_swp .swiper-wrapper .swiper-slide a{
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40vw;
+        overflow: unset;
+    }
+    .store .wrap .shop .shop_swp .swiper-wrapper .swiper-slide a .img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .store .wrap .shop .shop_swp .swiper-wrapper .swiper-slide a .img img{
+        object-fit:cover;
+        width: 100%;
+        height: 100%;
+        transition: all 0.6s;
+    }
+    .store .wrap .shop .shop_swp .swiper-wrapper .swiper-slide a .map_btn{display: block;}
+    .store .wrap .shop .shop_swp .swiper-wrapper .swiper-slide a .map_btn{
+        position: absolute;
+        top: 53.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #555;
+        border-radius: 100px;
+        padding: 10px 35px 10px 35px;
+        color: white;
+        font-family: "Metro";
+        font-weight: lighter;
+        opacity: 0;
+        transition: all 0.6s;
+    }   
+    .store .wrap .shop .shop_swp .swiper-wrapper .swiper-slide a:hover .map_btn{
+        opacity: 100%;
+    }
+    .store .wrap .shop .shop_swp .swiper-wrapper .swiper-slide a:hover img{
+        opacity: 80%;
+    }
+    .store .wrap .shop .shop_swp_next{
+        display: block;
+        position: absolute;
+        right: 2%;
+        top: 50%;
+        z-index: 20;
+    }
+    .store .wrap .shop .shop_swp_prev{
+        display: block;
+        position: absolute;
+        left: 2%;
+        top: 50%;
+        z-index: 20;
+    }
+    .store .wrap .shop .shop_swp_next img{width: 40px;}
+    .store .wrap .shop .shop_swp_prev img{width: 40px;}
+    .store .wrap .shop .location{
+        width: 55%;
+        position: relative;
+    }
+    .store .wrap .shop .location .txt{
+        display: block;
+        color: white;
+        font-size: 60px;
+        font-family: "times";
+        font-weight: 100;
+        transform: translatex(50%) rotate(90deg);
+        position: absolute;
+        top: 20%;
+        right: 50%;
+        background-color: #555;
+        z-index: 20;
+        padding: 10px;
+    }
+    .store .wrap .shop .location .txt::after{
+        content: '';
+        height: 1px;
+        width: 30vh;
+        background-color: white;
+        position: absolute;
+        bottom: 50%;
+        left: 100%;
+    }
+    .store .wrap .shop .location .swiper-pagination{
+        display: block;
+        color: white;
+        font-size: 20px;
+        width: unset;
+        position: absolute;
+        left: unset;
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 0;
+        padding: 20px 0;
+        background-color: unset;
+        background-color: #555;
+        z-index: 20;
+    }
+
+
+    .news .wrap{display: 100%; margin: 150px 0 0 0;}
+    .news .wrap .title .wrap2 .tit{font-size: 80px;}
+    .news .wrap .title .wrap2 .btn::before{
+        width: 160vh;
+    }
+    .news .wrap .content .new_swp .swiper-wrapper .swiper-slide .img{padding-top: 15px; height: 70vh;}
+    .news .wrap .content .new_swp .swiper-wrapper .swiper-slide .img img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .news .wrap .content .new_swp .swiper-wrapper .swiper-slide:first-child .img img{
+        object-position : center center;
+    }
+    .news .wrap .content .new_swp .swiper-wrapper .swiper-slide:nth-child(2) .img img{
+        object-position : left bottom;
+    }
+    .news .wrap .content .new_swp .swiper-wrapper .swiper-slide:nth-child(3)  .img img{
+        object-position : left bottom;
+    }
+    
+    
+    .kakao .wrap{
+        width: 95%;
+        height: unset;
+        margin: 0 auto;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: unset;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .kakao .wrap .title{color: white; text-align: left; background-color: #1ca0d9; z-index: 20;}
+    .kakao .wrap .title .tit{font-family: "times"; font-size: 80px;}
+    .kakao .wrap .button .btn::before{
+        width: 130vh;
+    }
+
+    .guide{}
+    .guide .wrap{width: 85%; margin: 150px; position: relative;}
+    .guide .wrap .img{width: 60%; z-index: 20; position: relative; top: 0; left: 0;}
+    .guide .wrap .img img{}
+    .guide .wrap .title{
+        margin-top: 20px;
+        text-align: right;
+        white-space: nowrap;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 20;
+    }
+    .guide .wrap .title .tit{font-family: "times"; font-size: 80px; color: #1ca0d9;}
+    .guide .wrap .title .txt{font-family: "Pretendard"; font-size: 16px; color: #555;}
+    .guide .wrap .button{
+        margin-top: unset;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .guide .wrap .button .btn{font-family: "Metro"; display: flex; justify-content: right; position: relative;}
+    .guide .wrap .button .btn::before{
+        content: '';
+        width: 130vh;
+        height: 1px;
+        position: absolute;
+        background-color: #1ca0d9;  
+        top: 50%;
+        right: 0; 
+    }
+    .guide .wrap .button .btn a{
+        display: inline-block;
+        padding: 10px 35px 10px 15px;
+        border: 1px solid #1ca0d9;
+        color: #1ca0d9;
+        background-color: white;
+        border-radius: 100px;
+        transition: all 0.4s;
+        position: relative;
+        white-space: nowrap;
+    }
+
+    footer .wrap .top{display: flex; justify-content: space-between;}
+    footer .wrap .bottom{display: flex; justify-content: space-between;}
+    footer .wrap .bottom .guide{margin-bottom: unset;}
+
+}
