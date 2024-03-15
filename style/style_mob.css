@@ -158,7 +158,6 @@ header .wrap nav .bottom .menu li .box .con a{
     background-color: white;
     transition: all 0.4s;
 }
-.banner .wrap .btn a:hover{background-color: #1ca0d9; color: white; overflow: hidden;}
 .banner .wrap .btn a::after{
     content: '';
     width: 10px;
@@ -170,10 +169,6 @@ header .wrap nav .bottom .menu li .box .con a{
     top: 50%;
     transform: translateY(-50%) rotate(-135deg); 
     background-repeat: no-repeat; 
-}
-.banner .wrap .btn a:hover::after{
-    border-left: 2px solid white;
-    border-bottom: 2px solid white;
 }
 
 .main{}
@@ -251,7 +246,6 @@ header .wrap nav .bottom .menu li .box .con a{
     position: relative;
     white-space: nowrap;
 }
-.store .wrap .title .bottom a:hover{background-color: #ffffff; color: #1ca0d9; overflow: hidden;}
 .store .wrap .title .bottom .btn a::after{
     content: '';
     width: 10px;
@@ -263,10 +257,6 @@ header .wrap nav .bottom .menu li .box .con a{
     top: 50%;
     transform: translateY(-50%) rotate(-135deg); 
     background-repeat: no-repeat; 
-}
-.store .wrap .title .bottom .btn a:hover::after{
-    border-left: 2px solid #1ca0d9;
-    border-bottom: 2px solid #1ca0d9;
 }
 .store .wrap .title .bottom .txt{
     font-family: "Pretendard";
@@ -354,13 +344,6 @@ header .wrap nav .bottom .menu li .box .con a{
     position: relative;
     white-space: nowrap;
 }
-.news .wrap .title .wrap2 .btn a:hover{
-    border: 1px solid #1ca0d9;
-}
-.news .wrap .title .wrap2 .btn a:hover{
-    background-color: #1ca0d9;
-    color: white;
-}
 .news .wrap .title .wrap2 .btn a::after{
     content: '';
     width: 10px;
@@ -372,10 +355,6 @@ header .wrap nav .bottom .menu li .box .con a{
     top: 50%;
     transform: translateY(-50%) rotate(-135deg); 
     background-repeat: no-repeat; 
-}
-.news .wrap .title .wrap2 .btn a:hover::after{
-    border-left: 2px solid white;
-    border-bottom: 2px solid white;
 }
 .news .wrap .content{padding-top: 30px;}
 .news .wrap .content .new_swp{
@@ -435,10 +414,6 @@ header .wrap nav .bottom .menu li .box .con a{
     position: relative;
     white-space: nowrap;
 }
-.kakao .wrap .button .btn a:hover{
-    background-color: white;
-    color: #1ca0d9;
-}
 .kakao .wrap .button .btn a::after{
     content: '';
     width: 10px;
@@ -450,10 +425,6 @@ header .wrap nav .bottom .menu li .box .con a{
     top: 50%;
     transform: translateY(-50%) rotate(-135deg); 
     background-repeat: no-repeat; 
-}
-.kakao .wrap .button .btn a:hover::after{
-    border-left: 2px solid #1ca0d9;
-    border-bottom: 2px solid #1ca0d9;
 }
 
 .guide{}
@@ -485,10 +456,6 @@ header .wrap nav .bottom .menu li .box .con a{
     position: relative;
     white-space: nowrap;
 }
-.guide .wrap .button .btn a:hover{
-    background-color: #1ca0d9;
-    color: white;
-}
 .guide .wrap .button .btn a::after{
     content: '';
     width: 10px;
@@ -500,10 +467,6 @@ header .wrap nav .bottom .menu li .box .con a{
     top: 50%;
     transform: translateY(-50%) rotate(-135deg); 
     background-repeat: no-repeat; 
-}
-.guide .wrap .button .btn a:hover::after{
-    border-left: 2px solid white;
-    border-bottom: 2px solid white;
 }
 
 footer{background-color: 100%; background-color: #333; color: white;}

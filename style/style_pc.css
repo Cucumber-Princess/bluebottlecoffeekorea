@@ -69,6 +69,12 @@
 
     .banner .wrap .text p{font-size: 20px;}
     .banner .wrap .text h2{font-size: 27px;}
+    .banner .wrap .btn a:hover{background-color: #1ca0d9; color: white; overflow: hidden; box-shadow: 0px 0px 10px 1px #00000030;}
+    .banner .wrap .btn a:hover::after{
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+
 
     .main .wrap{padding: 250px 0 250px 0px;}
     .main .wrap .tit::after{
@@ -117,6 +123,11 @@
         padding: 30px 30% 30px 0;
     }
     .store .wrap .title .bottom .txt{padding-left: 10px;}
+    .store .wrap .title .bottom a:hover{background-color: #ffffff; color: #1ca0d9; overflow: hidden; box-shadow: 0px 0px 10px 1px #00000030;}
+    .store .wrap .title .bottom .btn a:hover::after{
+        border-left: 2px solid #1ca0d9;
+        border-bottom: 2px solid #1ca0d9;
+    }
     .store .wrap .shop{
         width: 70%;
         margin: unset;
@@ -175,6 +186,7 @@
     }   
     .store .wrap .shop .shop_swp .swiper-wrapper .swiper-slide a:hover .map_btn{
         opacity: 100%;
+        box-shadow: 0px 0px 10px 1px #00000030;
     }
     .store .wrap .shop .shop_swp .swiper-wrapper .swiper-slide a:hover img{
         opacity: 80%;
@@ -185,6 +197,7 @@
         right: 2%;
         top: 50%;
         z-index: 20;
+        /* box-shadow: 0px 0px 10px 1px #00000030; */
     }
     .store .wrap .shop .shop_swp_prev{
         display: block;
@@ -192,6 +205,7 @@
         left: 2%;
         top: 50%;
         z-index: 20;
+        /* box-shadow: 0px 0px 10px 1px #00000080; */
     }
     .store .wrap .shop .shop_swp_next img{width: 40px;}
     .store .wrap .shop .shop_swp_prev img{width: 40px;}
@@ -250,6 +264,10 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: all 0.4s;
+    }
+    .news .wrap .content .new_swp .swiper-wrapper .swiper-slide .img img:hover{
+        opacity: 50%;
     }
     .news .wrap .content .new_swp .swiper-wrapper .swiper-slide:first-child .img img{
         object-position : center center;
@@ -260,7 +278,16 @@
     .news .wrap .content .new_swp .swiper-wrapper .swiper-slide:nth-child(3)  .img img{
         object-position : left bottom;
     }
-    
+    .news .wrap .title .wrap2 .btn a:hover{
+        border: 1px solid #1ca0d9;
+        background-color: #1ca0d9;
+        color: white;
+        box-shadow: 0px 0px 10px 1px #00000030;
+    }
+    .news .wrap .title .wrap2 .btn a:hover::after{
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+    }
     
     .kakao .wrap{
         width: 95%;
@@ -276,6 +303,16 @@
     .kakao .wrap .title .tit{font-family: "times"; font-size: 80px;}
     .kakao .wrap .button .btn::before{
         width: 130vh;
+    }   
+    .kakao .wrap .button .btn a:hover{
+        background-color: white;
+        color: #1ca0d9;
+        box-shadow: 0px 0px 10px 1px #00000030;
+
+    }
+    .kakao .wrap .button .btn a:hover::after{
+        border-left: 2px solid #1ca0d9;
+        border-bottom: 2px solid #1ca0d9;
     }
 
     .guide{}
@@ -320,6 +357,16 @@
         transition: all 0.4s;
         position: relative;
         white-space: nowrap;
+    }
+    .guide .wrap .button .btn a:hover{
+        background-color: #1ca0d9;
+        color: white;
+        box-shadow: 0px 0px 10px 1px #00000030;
+
+    }
+    .guide .wrap .button .btn a:hover::after{
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
     }
 
     footer .wrap .top{display: flex; justify-content: space-between;}
