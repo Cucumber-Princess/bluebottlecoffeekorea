@@ -171,8 +171,8 @@
                                 <div class="map_btn">Map</div>
                             </a></div>
                         </div><!--swiper-wrapper-->
-                        <div class="shop_swp_next"><img src="images/arrow_circle_r.png" alt="오른쪽 이동 버튼"></div>
-                        <div class="shop_swp_prev"><img src="images/arrow_circle_l.png" alt="왼쪽 이동 버튼"></div>
+                        <div class="shop_swp_next">오른쪽</div>
+                        <div class="shop_swp_prev">왼쪽</div>
                     </div><!--shop_swp-->
                     <div class="location">
                         <div class="txt">LOCATION</div>
@@ -280,9 +280,34 @@
             });
         });
 
-        //아코디언 펼치기
-        // $(function(){
-        //     var screenWidth = $(window).width();
+        const accordion = function() {
+	        var screenWidth = $(window).width();
+            if (screenWidth <=1200){
+                $(".menu .btn button").on("click", function() {
+                    $(".box").stop().slideUp(300);
+                    $(this).parent().next().stop().slideToggle(300);
+                    $(this).toggleClass("on");
+                    $(this).parent().parent().siblings().find("button").removeClass("on");
+                });
+                $(".menu li").off("mouseenter")
+                .off("mouseleave");
+            } else{
+                $(".menu li").on("mouseenter", function() {
+                    $(".box").stop().slideUp(300);
+                    $(this).find(".box").stop().slideToggle(300);
+
+                    $(".menu li").removeClass("on"); 
+                    }).on("mouseleave", function(){
+                    $(this).find(".box").stop().slideUp(300);   
+                });
+            }
+        };
+
+        accordion()
+        $(window).resize(function(){
+            accordion()
+        });
+        
         $(window).on("resize", function(){
 	        var screenWidth = $(window).width();
             if (screenWidth <=1200){
@@ -290,8 +315,7 @@
                     $(".box").stop().slideUp(300);
                     $(this).parent().next().stop().slideToggle(300);
                     $(this).toggleClass("on");
-                    // $(this).parent().parent().siblings().removeClass("on"); // 다른 부분 클릭 시 on 삭제  
-                    // 부모의 부모 요소의 형제 요소를 찾아 그 요소의 on class를 제거한다. 
+                    $(this).parent().parent().siblings().find("button").removeClass("on");
                 });
                 $(".menu li").off("mouseenter")
                 .off("mouseleave");
@@ -316,6 +340,9 @@
 
         //main swiper
         var swiper = new Swiper(".shop_swp", {
+            autoplay: {
+                delay: 3000,
+            },
             pagination: {
                 el: ".swiper-pagination",
                 type: "fraction",

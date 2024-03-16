@@ -150,7 +150,7 @@
     .store .wrap .shop .shop_swp .swiper-wrapper .swiper-slide a{
         text-align: center;
         font-size: 18px;
-        background: #fff;
+        background: black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -197,7 +197,33 @@
         right: 2%;
         top: 50%;
         z-index: 20;
-        /* box-shadow: 0px 0px 10px 1px #00000030; */
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 100px;
+        font-size: 0;
+        box-shadow: 0px 0px 10px 1px #00000040;
+        transition: all 0.4s;
+    }
+    .store .wrap .shop .shop_swp_next::after{
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-left: 2px solid #555;
+        border-bottom: 2px solid #555;
+        position: absolute;
+        right: 50%; 
+        top: 50%;
+        transform: translate(20%, -50%) rotate(-135deg); 
+        transition: all 0.4s;
+    }
+    .store .wrap .shop .shop_swp_next:hover{
+        background-color: #555;
+    }
+    .store .wrap .shop .shop_swp_next:hover::after{
+        right: 40%; 
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
     }
     .store .wrap .shop .shop_swp_prev{
         display: block;
@@ -205,10 +231,34 @@
         left: 2%;
         top: 50%;
         z-index: 20;
-        /* box-shadow: 0px 0px 10px 1px #00000080; */
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 100px;
+        font-size: 0;
+        box-shadow: 0px 0px 10px 1px #00000040;
+        transition: all 0.4s;
     }
-    .store .wrap .shop .shop_swp_next img{width: 40px;}
-    .store .wrap .shop .shop_swp_prev img{width: 40px;}
+    .store .wrap .shop .shop_swp_prev::after{
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-left: 2px solid #555;
+        border-bottom: 2px solid #555;
+        position: absolute;
+        right: 50%; 
+        top: 50%;
+        transform: translate(70%, -50%) rotate(45deg);
+        transition: all 0.4s;
+    }
+    .store .wrap .shop .shop_swp_prev:hover{
+        background-color: #555;
+    }
+    .store .wrap .shop .shop_swp_prev:hover::after{
+        right: 60%; 
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+    }
     .store .wrap .shop .location{
         width: 55%;
         position: relative;
