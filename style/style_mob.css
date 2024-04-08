@@ -465,12 +465,12 @@ header .wrap nav .bottom .menu li .box .con a{
     position: absolute;
     right: 20px; 
     top: 50%;
-    transform: translateY(-50%) rotate(-135deg); 
+    transform: translateY(-50%) rotate(-135deg);
     background-repeat: no-repeat; 
 }
 
 footer{background-color: 100%; background-color: #333; color: white;}
-footer .wrap{width: 90%; margin: 0 auto; padding: 30px 0;}
+footer .wrap{width: 90%; margin: 0 auto; padding: 70px 0;}
 footer .wrap .top{margin-bottom: 30px; border-bottom: 1px solid white;}
 footer .wrap .top .company{margin-bottom: 30px;}
 footer .wrap .top .company .tit{font-family: "Metro"; margin-bottom: 10px;}

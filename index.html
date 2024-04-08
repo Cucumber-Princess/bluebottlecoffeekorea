@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <link href="images/logo.png" rel="icon" type="image/png" sizes="32x32">
 </head>
 <body>
     <div id="wrapper">
@@ -101,7 +103,8 @@
         </div><!--main-->
 
         <div class="store">
-            <div class="wrap">
+            <div class="wrap" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                 <div class="title">
                     <div class="top">
                         <div class="tit"><h3>STORE</h3></div>
@@ -280,7 +283,10 @@
             });
         });
 
+        console.log("test")
+        
         const accordion = function() {
+            console.log(accordion)
 	        var screenWidth = $(window).width();
             if (screenWidth <=1200){
                 $(".menu .btn button").on("click", function() {
@@ -308,30 +314,8 @@
             accordion()
         });
         
-        $(window).on("resize", function(){
-	        var screenWidth = $(window).width();
-            if (screenWidth <=1200){
-                $(".menu .btn button").on("click", function() {
-                    $(".box").stop().slideUp(300);
-                    $(this).parent().next().stop().slideToggle(300);
-                    $(this).toggleClass("on");
-                    $(this).parent().parent().siblings().find("button").removeClass("on");
-                });
-                $(".menu li").off("mouseenter")
-                .off("mouseleave");
-            } else{
-                $(".menu li").on("mouseenter", function() {
-                    $(".box").stop().slideUp(300);
-                    $(this).find(".box").stop().slideToggle(300);
-
-                    $(".menu li").removeClass("on"); 
-                    }).on("mouseleave", function(){
-                    $(this).find(".box").stop().slideUp(300);   
-                });
-            }
-        });
-    
         function getDirection() {
+            console.log(windowWidth)
             var windowWidth = window.innerWidth;
             var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
 
